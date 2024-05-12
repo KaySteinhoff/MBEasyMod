@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace MBEasyMod.Navigation
+namespace MBEasyMod.Notification
 {
     public class MBPopup
     {

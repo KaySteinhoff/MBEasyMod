@@ -231,9 +231,11 @@
   <ItemGroup>
     <Compile Include="MBConsole.cs" />
     <Compile Include="Menu\MBMainMenu.cs" />
-    <Compile Include="Navigation\MBPopup.cs" />
+    <Compile Include="Notification\MBPopup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
