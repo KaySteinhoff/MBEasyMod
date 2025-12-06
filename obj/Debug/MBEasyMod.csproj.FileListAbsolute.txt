@@ -1,7 +1,0 @@
-C:\Users\kayst\Documents\MBMods\MBMods\bin\Debug\MBEasyMod.dll
-C:\Users\kayst\Documents\MBMods\MBMods\bin\Debug\MBEasyMod.pdb
-C:\Users\kayst\Documents\MBMods\MBMods\obj\Debug\MBEasyMod.csproj.AssemblyReference.cache
-C:\Users\kayst\Documents\MBMods\MBMods\obj\Debug\MBEasyMod.csproj.CoreCompileInputs.cache
-C:\Users\kayst\Documents\MBMods\MBMods\obj\Debug\MBEasyMod.csproj.Up2Date
-C:\Users\kayst\Documents\MBMods\MBMods\obj\Debug\MBEasyMod.dll
-C:\Users\kayst\Documents\MBMods\MBMods\obj\Debug\MBEasyMod.pdb
