@@ -1,7 +1,5 @@
 using System;
-using System.Linq.Expressions;
 using System.Reflection;
-using MBEasyMod.Managers;
 
 namespace MBEasyMod.Helpers
 {
@@ -63,9 +61,17 @@ namespace MBEasyMod.Helpers
             *pointerRawAddress = offset;
         }
 
-        public static unsafe bool TryDetourFromTo(MethodInfo src, MethodInfo dst)
+        /// <summary>
+        /// Attempts to reroute a method call to new method.
+        /// </summary>
+        /// <param name="src">Method that is to be rerouted</param>
+        /// <param name="dst">Method that is to be routed to</param>
+        /// <param name="exception">[Optional] should rerouting fail the resulting exception will be stored here. Null is successfull</param>
+        /// <returns></returns>
+        public static bool TryDetourFromTo(MethodInfo src, MethodInfo dst, out Exception exception)
         {
             bool result = true;
+            exception = null;
             try
             {
                 if (IntPtr.Size == sizeof(Int64))
@@ -75,8 +81,7 @@ namespace MBEasyMod.Helpers
             }
             catch (Exception ex)
             {
-                LoggingManager.LogMessage($"Unable to detour: {src?.Name ?? "null src"} -> {dst?.Name ?? "null dst"}\n{ex}");
-                LoggingManager.LogException(ex);
+                exception = ex;
                 result = false;
             }
 

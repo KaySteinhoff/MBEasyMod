@@ -10,9 +10,11 @@ namespace MBEasyMod
 {
     public class MBConsole
     {
+        public static Color ConsoleColor { get; set; } = Color.White;
+
         public static void Log(string format, params object[] args)
         {
-            InformationManager.DisplayMessage(new InformationMessage(String.Format(format, args)));
+            InformationManager.DisplayMessage(new InformationMessage(String.Format(format, args), ConsoleColor));
         }
     }
 }
